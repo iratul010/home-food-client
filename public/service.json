@@ -1,0 +1,221 @@
+[
+  {
+    "serviceId": 0,
+    "ServiceName": "Birthday celebration",
+    "img": "https://i.ibb.co/dKT8g6x/birthday.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "500 gm American black forest cake from cooper’s cake parlor. Price is shown for half kg cake this cake also available in 1kg. Please select cake size before add to shopping cart. It is available for delivery on the same day as well as your selected date. We take urgent/same day gift order for Dhaka until 6 PM Dhaka time. Coopers is one of the ISO certified bakeries in Bangladesh and their quality is always the best.",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 1,
+    "ServiceName": "Wedding Anniversary ",
+    "img": "https://i.ibb.co/hdBhL7D/anniversary-table-food.jpg",
+    "price": "$8",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "A wedding anniversary is a perfect day for all your family, friends, and relatives to get together. Apart from decorations, music, dance, lightening, food is the most important aspect to look after a party. Everyone’s taste has to be given preference, so you have to make sure that no one gets disappointed and everyone has a good evening. So,plan out the ideal menu, add up dishes from various cuisines, and get ready to plan a perfect wedding anniversary party.",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 2,
+    "ServiceName": "Anniversary cakes",
+    "img": "https://i.ibb.co/3vRJ7qr/wedding-cake.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "Ringing in another year together should be a time of celebration and elation. What better was to enjoy this wonderful moment then with a bit of sweet indulgence. Send an anniversary cake today - guaranteed on time!",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 3,
+    "ServiceName": "Midnight Pizza",
+    "img": "https://i.ibb.co/r39b156/midnight-pizza.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "Excellent handmade pizzas with authentic toppings. Delivery time can be a little slow, but a small sacrifice for a quality product. Now waiting for them to introduce pastas!",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 4,
+    "ServiceName": "Small party food delivery",
+
+    "img": "https://i.ibb.co/vYjK1WH/small-party.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "You’ve got a few friends coming over, so now what? With no time (or desire) to make a run to the grocery store, then spend hours in the kitchen, there’s only one good solution: delivery. And HomeFood is here to help with your party food for those smaller get togethers. And for those larger ones? There’s always HomeFood .",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 5,
+    "ServiceName": "Enjoy a brunch party with Homefood",
+
+    "img": "https://i.ibb.co/KwKX8xc/branch.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "Who says unforgettable gatherings have to happen at night? Invite your friends over for a mid-morning feast when you order brunch food delivery. Satisfy a wide range of breakfast food preferences with bagel delivery in half dozen, dozen and dozen-and-a-half sizes, breakfast sandwich delivery—including vegetarian breakfast sandwich options—and pastry delivery for anyone with a sweet tooth",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 6,
+    "ServiceName": "Midnight party with Chicken Kebabs",
+    "img": "https://i.ibb.co/mDmSCKL/kabab.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "Designed for professional chefs, check out this Chicken Seekh Kebab recipe: cooking instructions broken into components, full list of professional ingredients, chefs’ preparation secrets. Master this recipe with products like: Knorr Professional Crispy Coating Mix and Knorr Professional Chicken Stock Powder.",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 7,
+    "ServiceName": "Chicken Haleem",
+
+    "img": "https://i.ibb.co/dpSyzLZ/chicken-haleem.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "Haleem is a thick, savory stew consisting of a variety of spices and meats. It is a dish prepared all over Pakistan with different tastes. The recipe is the same and the pattern of cooking is the same. Though the recipe for this dish varies from region to region, the basic idea behind it remains the same.",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  },
+  {
+    "serviceId": 8,
+    "ServiceName": "Fried Fish",
+    "img": "https://i.ibb.co/7kyVJ58/fishfry.jpg",
+    "price": "$5",
+    "ratings": 4,
+    "discount": "15%",
+    "details": "Malvani Fish Fry recipe by HOMEFOOD - Fresh Seafood Free Home Delivery Service in Chennai There are a lot of similarities between the Malvani and Konkani style of cooking… ",
+    "facility": [
+      {
+        "name": "Instant Home Services",
+        "details": "I try to provide service within time, so that  work can be enjoyed successfully.."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "I am available week and always for your service.."
+      },
+
+      {
+        "name": "Quality Cost Service",
+        "details": "All my work is done with discretion and quality."
+      }
+    ]
+  }
+]
