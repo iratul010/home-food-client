@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 
@@ -13,19 +14,24 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="py-10 rounded bg-slate-50">
+    <div className="py-10 rounded   overflow:hidden px-1">
       <div className="  mx-auto text-center">
         <p className="mb-5 text-1xl font-bold text-orange-300"> Meals</p>
-        <h2 className="mb-5 text-4xl">HomeFood All chooses from best recipes!</h2>
+        <h2 className="mb-5 text-2xl lg:text-4xl ">HomeFood All chooses from best recipes!</h2>
       </div>
 
-      <div className="w-1/2  flex flex-col mx-auto gap-10">
+      <div className="w-4/5  flex flex-col mx-auto gap-10">
         {services.slice(0, 3).map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
-
-        <Link className="w-1/3 mx-auto" to="/serviceall">
-          <button className="btn ">Sea All</button>
+      </div>
+      <div className="text-center m-10 ">
+        {" "}
+        <Link
+          to="/serviceall"
+          className="p-3 rounded  btn-ghost text-red-400  bg-black  hover:no-underline  hover:text-black  font-semibold text-1xl text-center  underline"
+        >
+          Sea More ➡
         </Link>
       </div>
     </div>

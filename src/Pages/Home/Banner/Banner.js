@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div>
       <section>
-        <div className="   her bg-base-200">
+        <div className=" bg-yellow-50 rounded">
           <div className="hero-content flex-col lg:flex-row  ">
             <div className="w-1/2  relative">
               <img src={mix} alt="" />

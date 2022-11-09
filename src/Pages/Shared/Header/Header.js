@@ -22,7 +22,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-yellow-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,11 +35,14 @@ const Header = () => {
           </ul>
         </div>
         <Link className="btn btn-ghost normal-case text-xl text-center px-2 ">
-          <div className="flex flex-row">
-            <img style={{ width: "30%" }} src={logo} alt="" />
-            <p>
-              HOMEF<small className="text-3xl   text-red-500 text-center ">oo</small>D
-            </p>
+          <div className="">
+            <Link to="/" className="flex flex-row">
+              {" "}
+              <img style={{ width: "30%" }} src={logo} alt="" />
+              <p>
+                HOMEF<small className="text-3xl   text-red-500 text-center ">oo</small>D
+              </p>
+            </Link>
           </div>
         </Link>
       </div>
