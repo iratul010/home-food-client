@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.svg";
+import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleSignOut = () => {
+    logOut()
+      .then((res) => {})
+      .catch((err) => console.error(err));
+  };
   const menuItems = (
     <>
       <li>
@@ -13,12 +20,21 @@ const Header = () => {
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/login">Login</Link>
       </li>
       <li>
         <Link to="/signUp">SignUp</Link>
-      </li>
+      </li> */}
+      {user?.uid ? (
+        <li>
+          <Link onClick={handleSignOut}>Sign Out</Link>
+        </li>
+      ) : (
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+      )}
     </>
   );
   return (
@@ -34,17 +50,15 @@ const Header = () => {
             {menuItems}
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl text-center px-2 ">
-          <div className="">
-            <Link to="/" className="flex flex-row">
-              {" "}
-              <img style={{ width: "30%" }} src={logo} alt="" />
-              <p>
-                HOMEF<small className="text-3xl   text-red-500 text-center ">oo</small>D
-              </p>
-            </Link>
-          </div>
-        </Link>
+        <div className="btn btn-ghost normal-case text-xl text-center px-2 ">
+          <Link to="/" className="flex flex-row">
+            {" "}
+            <img style={{ width: "30%" }} src={logo} alt="" />
+            <p>
+              HOMEF<small className="text-3xl   text-red-500 text-center ">oo</small>D
+            </p>
+          </Link>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>

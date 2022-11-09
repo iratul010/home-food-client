@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import signUpImg from "../../../assets/signUp.jpg";
+import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 const SignUp = () => {
+  const { createUser } = useContext(AuthContext);
   const handleSignIn = (e) => {
     e.preventDefault();
     console.log(e.target);
@@ -9,6 +11,15 @@ const SignUp = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
+    createUser(email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   };
   return (
     <div className="hero my-10 ">

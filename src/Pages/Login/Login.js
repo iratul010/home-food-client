@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import loginImg from "../../assets/login.png";
+import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 const Login = () => {
+  const { login } = useContext(AuthContext);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    login(email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
   return (
     <div className="hero my-10 ">
       <div className="hero-content  grid gap-20 md:grid-cols-2 ">
@@ -10,7 +28,7 @@ const Login = () => {
         </div>
         <div className="card   w-full max-w-sm shadow-2xl bg-base-100 py-20">
           <h1 className="text-5xl font-bold text-center">Login!</h1>
-          <form onSubmit={"handleLogin"} className="card-body">
+          <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -33,7 +51,7 @@ const Login = () => {
             </div>
           </form>
           <p className="text-center">
-            New to Genius Car{" "}
+            New to Home-Food{" "}
             <Link to="/signup" className="text-red-500 font-bold">
               Sign Up
             </Link>
