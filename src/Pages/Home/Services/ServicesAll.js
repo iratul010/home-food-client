@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "./ServiceCard";
+import ServiceReview from "./ServiceReview";
 
 const ServicesAll = () => {
   const [services, setServices] = useState([]);
