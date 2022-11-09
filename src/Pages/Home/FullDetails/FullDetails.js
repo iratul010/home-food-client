@@ -1,11 +1,12 @@
 import React from "react";
 import { FaCheck, FaStar } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
+import AddComments from "../AddComments/AddComments";
 import ServiceReview from "../Services/ServiceReview";
 
 const FullDetails = () => {
-  const service = useLoaderData();
-  const { img, ServiceName, price, ratings, details, discount } = service;
+  const { img, ServiceName, price, ratings, details, discount } = useLoaderData();
+
   return (
     <div>
       <div className="card lg:card-side bg-base-100 shadow-xl  ">
@@ -31,11 +32,15 @@ const FullDetails = () => {
           </div>
         </div>
       </div>
-      <div className="my-10">
+      <div className="my-10 py-10">
         <div className="mb-10 text-1xl font-bold text-orange-300 text-center underline">
-          <h2> Reviews Here!</h2>
+          <h2 className="text-3xl">Food Reviews!</h2>
         </div>
         <ServiceReview></ServiceReview>
+      </div>
+      <div className=" p-10 w-2/3 mx-auto">
+        <p className="text-start mx-0">Add to Comments:</p>
+        <AddComments></AddComments>
       </div>
     </div>
   );
