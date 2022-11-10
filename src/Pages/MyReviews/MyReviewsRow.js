@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { FaStar, FaStarHalfAlt, FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 
-const MyReviewsRow = ({ review, time, handleDelete }) => {
+const MyReviewsRow = ({ review, time, handleDelete, handleUpdate }) => {
   const { customer, email, message, photoUrl, _id } = review;
 
   return (
@@ -30,6 +33,9 @@ const MyReviewsRow = ({ review, time, handleDelete }) => {
         <button className="btn btn-ghost" onClick={() => handleDelete(_id)}>
           Delete
         </button>
+        <Link to="/reviewsUpdate" className="btn btn-ghost">
+          Update
+        </Link>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { FaCheck, FaStar } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
-
 import AddComments from "../AddComments/AddComments";
 import ServiceReview from "../Services/ServiceReview";
 
@@ -19,8 +18,8 @@ const FullDetails = () => {
             <img src={img} style={{ width: "100%", height: "100%" }} className="rounded" alt="Album" />
           </figure>
         </div>
-        <div>
-          <div className="card-body lg:w-2/5 ">
+        <div className="card-body lg:w-2/5 ">
+          <div>
             <h2 className="card-title text-black">{ServiceName}</h2>
             <p className="  flex flex-row my-2">
               <FaCheck className="text-1xl text-yellow-400 mx-2"></FaCheck>

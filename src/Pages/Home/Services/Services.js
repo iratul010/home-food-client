@@ -27,7 +27,7 @@ const Services = () => {
       </div>
       <div className="text-center m-10 ">
         <Link
-          to="/serviceall"
+          to="/allservices"
           className="p-3 rounded  btn-ghost text-red-400  bg-black  hover:no-underline  hover:text-black  font-semibold text-1xl text-center  underline"
         >
           Sea More ➡

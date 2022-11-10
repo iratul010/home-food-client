@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Four04page from "../../Four04Page/Four04page";
 import Main from "../../Layout/Main";
 import AddService from "../../Pages/AddService/AddService";
 import Blog from "../../Pages/Blog/Blog";
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/serviceall",
+        path: "/allservices",
         element: <ServicesAll></ServicesAll>,
       },
       {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Four04page></Four04page>,
   },
 ]);
 export default router;

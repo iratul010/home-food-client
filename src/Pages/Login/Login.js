@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginImg from "../../assets/login.png";
 import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 import useTitle from "../../hooks/useTitle";
+import SocialSiteLogin from "../Shared/socialSiteLogin/SocialSiteLogin";
 const Login = () => {
   useTitle("Login");
   const location = useLocation();
@@ -18,9 +19,26 @@ const Login = () => {
     login(email, password)
       .then((res) => {
         const user = res.user;
+        const currentUser = {
+          email: user.email,
+        };
         console.log(user);
-        navigate(from, { replace: true });
-        form.reset();
+        fetch("http://localhost:5000/jwt", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(currentUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data.token);
+            localStorage.setItem("homeFood-token", data.token);
+
+            navigate(from, { replace: true });
+
+            form.reset();
+          });
       })
       .catch((err) => {
         console.error(err);
@@ -62,7 +80,7 @@ const Login = () => {
               Sign Up
             </Link>
           </p>
-          {/* <SocialLogin></SocialLogin> */}
+          <SocialSiteLogin></SocialSiteLogin>
         </div>
       </div>
     </div>
