@@ -5,3 +5,6 @@
 - needed component file create
 - routes setup
 - private routes set
+
+* firebase auth set
+* firebase social sign
