@@ -6,7 +6,7 @@ const Four04page = () => {
       <div className="m-8">
         <p className="text-center">
           Please Try Again,and try to used Correct URL for Searching. <br />
-          Whoops, that page is Not Available{" "}
+          Whoops, that page is Not Available
         </p>
       </div>
       <div className="m-10">
