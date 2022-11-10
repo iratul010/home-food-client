@@ -14,22 +14,22 @@ const Header = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/testimonials">Testimonials</Link>
-      </li>
+
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      {/* <li>
-        <Link to="/login">Login</Link>
-      </li>
-      <li>
-        <Link to="/signUp">SignUp</Link>
-      </li> */}
       {user?.uid ? (
-        <li>
-          <Link onClick={handleSignOut}>Sign Out</Link>
-        </li>
+        <>
+          <li>
+            <Link to="/myreviews">My Reviews</Link>
+          </li>
+          <li>
+            <Link to="/addservice">Add Service</Link>
+          </li>
+          <li>
+            <Link onClick={handleSignOut}>Sign Out</Link>
+          </li>
+        </>
       ) : (
         <li>
           <Link to="/login">Login</Link>

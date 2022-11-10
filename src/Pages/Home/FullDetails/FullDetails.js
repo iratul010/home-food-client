@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaCheck, FaStar } from "react-icons/fa";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
+
 import AddComments from "../AddComments/AddComments";
 import ServiceReview from "../Services/ServiceReview";
 
 const FullDetails = () => {
-  const { img, ServiceName, price, ratings, details, discount } = useLoaderData();
+  const { _id, img, ServiceName, price, ratings, details, discount } = useLoaderData();
+
+  const { user } = useContext(AuthContext);
 
   return (
     <div>
@@ -15,8 +19,8 @@ const FullDetails = () => {
             <img src={img} style={{ width: "100%", height: "100%" }} className="rounded" alt="Album" />
           </figure>
         </div>
-        <div className="card-body lg:w-2/5 ">
-          <div>
+        <div>
+          <div className="card-body lg:w-2/5 ">
             <h2 className="card-title text-black">{ServiceName}</h2>
             <p className="  flex flex-row my-2">
               <FaCheck className="text-1xl text-yellow-400 mx-2"></FaCheck>
@@ -38,10 +42,16 @@ const FullDetails = () => {
         </div>
         <ServiceReview></ServiceReview>
       </div>
-      <div className=" p-10 w-2/3 mx-auto">
-        <p className="text-start mx-0">Add to Comments:</p>
-        <AddComments></AddComments>
-      </div>
+      {user?.uid ? (
+        <div className=" p-10 w-2/3 mx-auto">
+          <p className="text-start mx-0">Add to Comments:</p>
+          <AddComments id={_id} serviceName={ServiceName}></AddComments>
+        </div>
+      ) : (
+        <>
+          <Link to="/login">Please login to add a review</Link>
+        </>
+      )}
     </div>
   );
 };

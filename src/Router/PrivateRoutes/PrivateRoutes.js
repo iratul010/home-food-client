@@ -6,6 +6,7 @@ import LoadingData from "../../Pages/Shared/LoadingData/LoadingData";
 const PrivateRoutes = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
   const location = useLocation();
+
   if (loading) {
     return <LoadingData></LoadingData>;
   }
@@ -13,7 +14,7 @@ const PrivateRoutes = ({ children }) => {
     return children;
   }
 
-  return <Navigate state={{ from: location }} replace></Navigate>;
+  return <Navigate to="/login" state={{ from: location }} replace></Navigate>;
 };
 
 export default PrivateRoutes;
