@@ -41,8 +41,6 @@ const AddComments = ({ id, serviceName }) => {
   return (
     <div className="form-control my-5">
       <form onSubmit={addToComments}>
-        {/* <h2 className="text-4xl"> </h2> */}
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input type="text" placeholder="First Name" name="firstName" className="input input-bordered w-full" required />
           <input type="text" placeholder="Last Name" name="lastName" className="input input-bordered w-full" required />

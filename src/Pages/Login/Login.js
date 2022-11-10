@@ -22,7 +22,7 @@ const Login = () => {
         const currentUser = {
           email: user.email,
         };
-        console.log(user);
+
         fetch("http://localhost:5000/jwt", {
           method: "POST",
           headers: {

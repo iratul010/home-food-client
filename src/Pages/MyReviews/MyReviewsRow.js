@@ -2,7 +2,7 @@ import { FaStar, FaStarHalfAlt, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const MyReviewsRow = ({ review, time, handleDelete, handleUpdate }) => {
-  const { customer, email, message, photoUrl, _id } = review;
+  const { customer, message, photoUrl, _id } = review;
 
   return (
     <div className="flex flex-col gap-10">
