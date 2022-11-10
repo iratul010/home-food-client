@@ -44,6 +44,7 @@ const FullDetails = () => {
       {user?.uid ? (
         <div className=" p-10 w-2/3 mx-auto">
           <p className="text-start mx-0">Add to Comments:</p>
+          {/* comments add by another component */}
           <AddComments id={_id} serviceName={ServiceName}></AddComments>
         </div>
       ) : (

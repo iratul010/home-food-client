@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import { FaStar, FaStarHalfAlt, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../Contexts/AuthProvider/AuthProvider";
 
 const MyReviewsRow = ({ review, time, handleDelete, handleUpdate }) => {
   const { customer, email, message, photoUrl, _id } = review;
