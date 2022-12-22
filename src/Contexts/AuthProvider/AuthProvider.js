@@ -13,6 +13,7 @@ const auth = getAuth(app);
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
+  const [deleteId, setDeleteId] = useState("");
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
@@ -45,6 +46,8 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
   const authInfo = {
+    deleteId,
+    setDeleteId,
     auth,
     loading,
     createUser,

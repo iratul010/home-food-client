@@ -23,7 +23,7 @@ const Login = () => {
           email: user.email,
         };
 
-        fetch("http://localhost:5000/jwt", {
+        fetch("https://home-food-server-app.vercel.app/jwt", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -32,8 +32,8 @@ const Login = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data.token);
-            localStorage.setItem("homeFood-token", data.token);
+            // console.log(data.token);
+            // localStorage.setItem("homeFood-token", data.token);
 
             navigate(from, { replace: true });
 

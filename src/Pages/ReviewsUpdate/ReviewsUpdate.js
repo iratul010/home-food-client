@@ -20,7 +20,7 @@ const ReviewsUpdate = () => {
   //   photoUrl,
   //   message,
   // };
-  // fetch(`http://localhost:5000/reviews/${_id}`, {
+  // fetch(`https://home-food-server-app.vercel.app/reviews/${_id}`, {
   //   method: "PUT",
   //   headers: {
   //     "content-type": "application/json",

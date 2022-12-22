@@ -20,9 +20,9 @@ const Header = () => {
       </li>
       {user?.uid ? (
         <>
-          <li>
+          {/* <li>
             <Link to="/myreviews">My Reviews</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/allServices">All Services</Link>
           </li>

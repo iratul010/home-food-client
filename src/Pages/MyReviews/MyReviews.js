@@ -7,22 +7,20 @@ const MyReviews = () => {
   useTitle("Reviews");
   const { user, logOut } = useContext(AuthContext);
 
-  const time = user.metadata.lastSignInTime;
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/reviews?email=${user?.email}`, {
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("homeFood-token")}`,
-      },
-    })
+    fetch(`https://home-food-server-app.vercel.app/reviews?email=${user?.email}`, {})
       .then((res) => {
-        if (res.status === 401 || res.status === 403) {
-          logOut();
-        }
+        // if (res.status === 401 || res.status === 403) {
+        //   logOut();
+        // }
         return res.json();
       })
-      .then((data) => setReviews(data))
+      .then((data) => {
+        console.log(data);
+        setReviews(data);
+      })
       .catch((err) => {
         console.error(err);
       });
@@ -31,11 +29,8 @@ const MyReviews = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are You remove this Comment?");
     if (proceed) {
-      fetch(`http://localhost:5000/reviews/${id}`, {
+      fetch(`https://home-food-server-app.vercel.app/reviews/${id}`, {
         method: "DELETE",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("homeFood-token")}`,
-        },
       })
         .then((res) => res.json())
         .then((data) => {
@@ -43,6 +38,7 @@ const MyReviews = () => {
           if (data.deletedCount > 0) {
             alert("Removed successfully");
             const remaining = reviews.filter((odr) => odr._id !== id);
+            console.log(remaining);
             setReviews(remaining);
           }
         });
@@ -60,12 +56,12 @@ const MyReviews = () => {
             </tr>
           </thead>
           <tbody>
-            {
+            {/* {
               //review part
               reviews.map((review) => (
                 <MyReviewsRow key={review._id} review={review} time={time} handleDelete={handleDelete}></MyReviewsRow>
               ))
-            }
+            } */}
           </tbody>
         </table>
       </div>

@@ -5,11 +5,11 @@ import useTitle from "../../hooks/useTitle";
 const Blog = () => {
   useTitle("Blog");
   return (
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
-        <h2 class="accordion-header mb-0" id="flush-headingOne">
+    <div className="accordion accordion-flush" id="accordionFlushExample">
+      <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+        <h2 className="accordion-header mb-0" id="flush-headingOne">
           <button
-            class="accordion-button
+            className="accordion-button
     relative
     flex
     items-center
@@ -33,11 +33,11 @@ const Blog = () => {
         </h2>
         <div
           id="flush-collapseOne"
-          class="accordion-collapse border-0 collapse show"
+          className="accordion-collapse border-0 collapse show"
           aria-labelledby="flush-headingOne"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body py-4 px-5">
+          <div className="accordion-body py-4 px-5">
             The five critical differences between SQL vs NoSQL are: SQL databases are relational, NoSQL databases are
             non-relational.
             <br />
@@ -51,10 +51,10 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div class="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
-        <h2 class="accordion-header mb-0" id="flush-headingTwo">
+      <div className="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+        <h2 className="accordion-header mb-0" id="flush-headingTwo">
           <button
-            class="accordion-button
+            className="accordion-button
     collapsed
     relative
     flex
@@ -79,11 +79,11 @@ const Blog = () => {
         </h2>
         <div
           id="flush-collapseTwo"
-          class="accordion-collapse border-0 collapse"
+          className="accordion-collapse border-0 collapse"
           aria-labelledby="flush-headingTwo"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body py-4 px-5">
+          <div className="accordion-body py-4 px-5">
             * What is JWT ? <br />
             JSON Web Token is an open industry standard used to share information between two entities, usually a client (like
             your app’s frontend) and a server (your app’s backend). They contain JSON objects which have the information that
@@ -98,10 +98,10 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
-        <h2 class="accordion-header mb-0" id="flush-headingThree">
+      <div className="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
+        <h2 className="accordion-header mb-0" id="flush-headingThree">
           <button
-            class="accordion-button
+            className="accordion-button
     collapsed
     relative
     flex
@@ -126,21 +126,21 @@ const Blog = () => {
         </h2>
         <div
           id="flush-collapseThree"
-          class="accordion-collapse collapse"
+          className="accordion-collapse collapse"
           aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body py-4 px-5">
+          <div className="accordion-body py-4 px-5">
             JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine
             installed. Node. js, on the other hand, is an interpreter or execution environment for the JavaScript programming
             language.
           </div>
         </div>
       </div>
-      <div class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
-        <h2 class="accordion-header mb-0" id="flush-headingThree">
+      <div className="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
+        <h2 className="accordion-header mb-0" id="flush-headingThree">
           <button
-            class="accordion-button
+            className="accordion-button
     collapsed
     relative
     flex
@@ -166,11 +166,11 @@ const Blog = () => {
         </h2>
         <div
           id="flush-collapseThree"
-          class="accordion-collapse collapse"
+          className="accordion-collapse collapse"
           aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body py-4 px-5">
+          <div className="accordion-body py-4 px-5">
             NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of
             event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes
             them.
